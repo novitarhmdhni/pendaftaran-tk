@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/crud', ContohCrud::class)->name('contoh.crud');
+Route::get('/crud', ContohCrud::class)->middleware(['auth', 'verified'])->name('contoh.crud');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
