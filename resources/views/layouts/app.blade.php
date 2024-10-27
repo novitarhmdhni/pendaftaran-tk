@@ -34,7 +34,7 @@
         @endif
         <!-- Page Content -->
         <main>
-            @livewire('contoh-crud')
+            {{ $slot }}
         </main>
     </div>
 
