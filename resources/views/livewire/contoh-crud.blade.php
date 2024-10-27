@@ -58,6 +58,9 @@
                                         <button @click="modalOpen=true"
                                             class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors bg-white border rounded-md hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none"
                                             wire:click="edit({{ $jadwal->id }})">Edit</button>
+                                        <button @click="modalOpen=true"
+                                            class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors bg-red-600 hover:bg-red-700 text-white border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none"
+                                            wire:click="delete({{ $jadwal->id }})">Delete</button>
                                     </td>
                                 </tr>
                             @empty

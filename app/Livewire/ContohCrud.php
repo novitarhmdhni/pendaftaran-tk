@@ -83,6 +83,15 @@ class ContohCrud extends Component
         $this->resetForm();
     }
 
+    public function delete($id)
+    {
+        $jadwal = Jadwal::find($id);
+        if ($jadwal) {
+            $jadwal->delete();  // Menghapus data dari database
+            $this->emit('jadwalDisimpan'); // Emit event untuk reload data setelah delete
+        }
+    }
+
     public function render()
     {
         return view('livewire.contoh-crud');
