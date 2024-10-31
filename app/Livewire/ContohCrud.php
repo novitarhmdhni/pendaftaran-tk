@@ -109,6 +109,7 @@ class ContohCrud extends Component
             //         $query->where('hari', 'ilike', '%' . $this->cari . '%');
             //     });
             // })
+            // hi
             ->when(!empty($this->cari), function ($p) {
                 $p->where('hari', 'ilike', '%' . $this->cari . '%')
                     ->orWhere('mata_pelajaran', 'ilike', '%' . $this->cari . '%');
