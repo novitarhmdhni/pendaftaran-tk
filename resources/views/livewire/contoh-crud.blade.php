@@ -41,6 +41,11 @@
                         @endif
                     </div>
 
+                    {{-- flex adalah fleksibel box --}}
+                    <div class="flex justify-end mb-4">
+                        <input type="text" name="cari" id="cari" wire:model="cari" placeholder="search"
+                            class="border border-grey-300 rounded-xl px-5 py-2">
+                    </div>
                     <table class="min-w-full border border-gray-300">
                         <thead class="bg-gray-100">
                             <tr>
@@ -71,6 +76,10 @@
                         </tbody>
                     </table>
 
+
+                    <div class="mt-4">
+                        {{ $semuaJadwal->links() }}
+                    </div>
                 </div>
             </div>
         </div>
