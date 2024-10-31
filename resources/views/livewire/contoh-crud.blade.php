@@ -41,7 +41,7 @@
                         @endif
                     </div>
 
-                    {{-- flex adalah fleksibel box --}}
+                    {{-- flex adalah fleksibel box okok yes --}}
                     <div class="flex justify-end mb-4">
                         <input type="text" name="cari" id="cari" wire:model="cari" placeholder="search"
                             class="border border-grey-300 rounded-xl px-5 py-2">
